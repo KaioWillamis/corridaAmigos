@@ -11,14 +11,153 @@ header img{
 
 section{
     width: 100%;
-    height: 180px;
+    height: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Card de inscrição */
+.signup-card {
+    background: #ffffff;
+    padding: 20px 12px 18px;
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Título */
+.signup-card h3 {
+    margin: 0 0 12px;
+    color: #102b50;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Container das opções */
+.options-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* Cada opção */
+.option-box {
+    flex: 1;
+    min-width: 0;
+    height: 80px;
+    box-sizing: border-box;
+    border: 1px solid #d6eaf8;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #f9fcff, #edf7fd);
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 34px 30px;
+    align-items: center;
+    justify-items: center;
+    padding: 5px 4px;
+    color: #102b50;
+}
+
+/* Ícone da camisa */
+.option-icon {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 23px;
+    color: #102b50;
+}
+
+/* Texto COM CAMISA / SEM CAMISA */
+.option-label {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 8px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* Preço */
+.option-box .price {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    font-size: 16px;
+    font-weight: 800;
+    color: #15365f;
+    white-space: nowrap;
+}
+
+/* Botão de inscrição */
+.btn-submit {
+    width: 100%;
+    min-height: 35px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #0797e8, #08b4e9);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.btn-submit:hover {
+    filter: brightness(0.95);
+}
+
+.btn-submit i {
+    font-size: 13px;
+}
+
+/* Barra inferior de navegação */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: #071e39;
+    padding: 10px 0 8px;
+    box-sizing: border-box;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Cada item da navegação */
+.nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #b9c9dc;
+    text-decoration: none;
+    font-size: 9px;
+    transition: color 0.2s ease;
+}
+
+/* Ícones da barra */
+.nav-item i {
+    font-size: 15px;
+}
+
+/* Item ativo */
+.nav-item.active {
+    color: #08b9f2;
+}
+
+.nav-item span {
+    white-space: nowrap;
 }
 
 nav{
     width: 100%;
-    height: 50px;
+    height: 35px;
     background-color: black;
 }
